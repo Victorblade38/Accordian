@@ -5,9 +5,10 @@ function toggleAccordion(button, accordion) {
     //toggle it
     accordion.classList.toggle("hidden");
     //change the img src
+    //images
     button.firstElementChild.setAttribute(
       "src",
-      isOpen ? "downarrow.png" : "uparrow.png"
+      isOpen ? "./downarrow.png" : "./uparrow.png"
     );
     //same diff attribute
     button.setAttribute("aria-expanded", isOpen ? "true" : "false");
